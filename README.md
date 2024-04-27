@@ -71,30 +71,30 @@ To perform a get request on a single entry within a directory, users must add a 
 #### Pokemon Card
 - name: String
 - element: String
-- height: (Object)
-        - feet: Number
-        - inches: Number
+- height:
+    - feet: Number
+    - inches: Number
 - weight: Number
 - set: String
 - set_number: String
 - hp: Number
-- attacks: (Array of Object)
-        - name: String
-        - damage: Number
-        - cost: (Array of Object)
-            - element: String
-            - num_of_energy: Number
-        - description: String
-    - pokemon_power: (Object)
-        - name: String
-        - description: String
-    - weakness: String
-    - resistance: String
-    - retreat_cost: (Object)
+- attacks:
+    - name: String
+    - damage: Number
+    - cost:
         - element: String
         - num_of_energy: Number
     - description: String
-    - holographic: Boolean
+- pokemon_power:
+    - name: String
+    - description: String
+- weakness: String
+- resistance: String
+- retreat_cost:
+    - element: String
+    - num_of_energy: Number
+- description: String
+- holographic: Boolean
 
 To perform a POST request, users can utilize a tool like Postman. They only need to input the URL corresponding to the item they want to add (e.g., for a fruit: localhost:3000/fruits) and provide the necessary key-value pairs. 
 
