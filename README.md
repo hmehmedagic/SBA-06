@@ -71,33 +71,28 @@ To perform a get request on a single entry within a directory, users must add a 
 #### Pokemon Card
 - name: String
 - element: String
-- height: {
+- height: (Object)
         - feet: Number
         - inches: Number
-    },
 - weight: Number
 - set: String
 - set_number: String
 - hp: Number
-- attacks: [{
+- attacks: (Array of Object)
         - name: String
         - damage: Number
-        - cost: [{
+        - cost: (Array of Object)
             - element: String
             - num_of_energy: Number
-        }],
         - description: String
-    }],
-    - pokemon_power: {
+    - pokemon_power: (Object)
         - name: String
         - description: String
-    }
     - weakness: String
     - resistance: String
-    - retreat_cost: {
+    - retreat_cost: (Object)
         - element: String
         - num_of_energy: Number
-    }
     - description: String
     - holographic: Boolean
 
